@@ -1,4 +1,7 @@
-export default function ActionButton() {
+export default function ActionButton({ text }) {
+  if (!text) {
+    text = "Explore";
+  }
   return (
     <button
       type="button"
@@ -10,7 +13,7 @@ export default function ActionButton() {
         font-bold rounded-full text-sm px-10 py-2.5 text-center mr-3 md:mr-0 
       "
     >
-      Explore
+      {text}
     </button>
   );
 }
