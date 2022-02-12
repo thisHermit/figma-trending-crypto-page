@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CTA() {
   return (
-    <div className="bg-gradient-to-r from-pink-primary to-light-blue-primary mx-6 rounded-3xl text-center">
+    <div className="bg-gradient-to-r from-pink-primary to-light-blue-primary mx-6 lg:mx-60 rounded-3xl text-center">
       <p className="p-6 text-4xl font-bold ">Looking To Build On Key?</p>
       <button
         type="button"

@@ -159,9 +159,9 @@ const buttonsGroup = [
 
 export default function Products() {
   return (
-    <div className="space-y-3 overflow-y-auto">
+    <div className="space-y-3 overflow-y-auto mx-2 lg:mx-60">
       <div>
-        <p className="text-5xl text-bold text-transparent bg-clip-text bg-gradient-to-r from-[#C517F1] to-[#5AFFFF]">
+        <p className="text-5xl text-bold text-transparent m-6">
           <svg height="80" width="450">
             <defs>
               <linearGradient id="Gradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -176,7 +176,7 @@ export default function Products() {
           </svg>
         </p>
       </div>
-      <div className=" p-4 gap-4 flex flex-wrap auto-cols-max">
+      <div className=" p-4 gap-y-4 flex flex-wrap auto-cols-max">
         {buttonsGroup.map((item) => (
           <button
             type="button"

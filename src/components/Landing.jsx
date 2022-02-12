@@ -8,7 +8,7 @@ const cirlces = [
 ];
 export default function Landing() {
   return (
-    <div className="columns-2 gap-8">
+    <div className="columns-2 gap-8 place-content-center mx-2 lg:mx-60">
       <div className="w-full my-9 px-9 space-y-3">
         <div className="text-5xl font-bold space-y-4">
           <p>A Decentralised</p>

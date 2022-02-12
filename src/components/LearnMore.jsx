@@ -8,7 +8,7 @@ const cirlces = [
 ];
 export default function LearnMore() {
   return (
-    <div className="columns-2 gap-8">
+    <div className="columns-2 gap-8 mx-2 lg:mx-60">
       <div className="w-full my-9 px-9 space-y-3">
         <div className="text-5xl font-bold space-y-4">
           <p>Learn More</p>
@@ -128,17 +128,6 @@ export default function LearnMore() {
                 filter="url(#emboss)"
               />
             ))}
-            {/* {cirlces.map((item) => (
-              <circle
-                cx={item.x}
-                cy={item.y}
-                r={item.r}
-                stroke="white"
-                stroke-width={item.w}
-                fill="white"
-                filter="url(#emboss)"
-              />
-            ))} */}
           </svg>
         </div>
       </div>
