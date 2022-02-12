@@ -1,4 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
+import ActionButton from "./ActionButton";
 const navigation = [
   { name: "Home", href: "#", current: true },
   { name: "Blog", href: "#", current: false },
@@ -25,14 +26,14 @@ export default function Navbar() {
               cy="20"
               r="10"
               fill="#C517F1"
-              clip-path="url(#cut-off-bottom)"
+              clipPath="url(#cut-off-bottom)"
             />
             <circle
               cx="20"
               cy="20"
               r="10"
               fill="#014FFF"
-              clip-path="url(#cut-off-top)"
+              clipPath="url(#cut-off-top)"
             />
           </svg>
           <span className="self-center text-lg font-semibold whitespace-nowrap dark:text-white">
@@ -40,12 +41,7 @@ export default function Navbar() {
           </span>
         </a>
         <div className="flex md:order-2">
-          <button
-            type="button"
-            className="text-white bg-gradient-to-r from-[#C517F1] to-[#5AFFFF] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-10 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Explore
-          </button>
+          <ActionButton />
           <button
             data-collapse-toggle="mobile-menu-4"
             type="button"
